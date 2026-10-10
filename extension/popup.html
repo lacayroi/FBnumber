@@ -6,21 +6,35 @@
 </head>
 <body>
   <h1>Thu thập SĐT công khai</h1>
+
   <div class="actions">
     <button id="scan">Quét trang</button>
-    <button id="expand" title="Bấm các nút 'Xem thêm bình luận' rồi quét lại">Mở rộng bình luận</button>
+    <button id="autoscroll" title="Tự cuộn để tải hết bình luận rồi quét">Cuộn &amp; quét hết</button>
+    <button id="stop" class="danger" hidden>Dừng cuộn</button>
   </div>
+
+  <fieldset class="opts">
+    <legend>Tùy chọn</legend>
+    <label><input type="checkbox" id="keepAll"> Lưu cả comment không có số</label>
+    <label>Số lần cuộn tối đa <input type="number" id="maxScrolls" min="1" max="500" value="50"></label>
+    <label>Đợi sau mỗi lần cuộn (giây) <input type="number" id="waitMin" min="0" step="0.5" value="1.5"> – <input type="number" id="waitMax" min="0" step="0.5" value="3"></label>
+    <label>Tạm dừng sau <input type="number" id="pauseEvery" min="0" value="0"> lần cuộn, nghỉ <input type="number" id="pauseMin" min="0" step="0.5" value="1"> phút</label>
+  </fieldset>
+
   <div class="actions">
     <button id="copy">Sao chép SĐT</button>
     <button id="csv">Xuất CSV</button>
-    <button id="clear" class="danger">Xóa</button>
+    <button id="clear" class="danger">Xóa lịch sử</button>
   </div>
+
   <p id="status"></p>
+
   <table>
-    <thead><tr><th>SĐT</th><th>Người đăng</th><th>Nội dung</th></tr></thead>
+    <thead><tr><th>Ngày</th><th>SĐT</th><th>SĐT2</th><th>Người đăng</th><th>Nội dung</th></tr></thead>
     <tbody id="rows"></tbody>
   </table>
-  <p class="note">Chỉ thu thập số do chính người dùng đăng công khai trên trang đang mở. Hãy dùng dữ liệu đúng mục đích và tuân thủ Nghị định 13/2023/NĐ-CP.</p>
+
+  <p class="note">Chỉ thu thập số do chính người dùng đăng công khai trên trang đang mở. Hãy dùng dữ liệu đúng mục đích và tuân thủ Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân.</p>
   <script src="popup.js"></script>
 </body>
 </html>
