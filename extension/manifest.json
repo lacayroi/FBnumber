@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Phone Collector - Thu thập SĐT công khai",
+  "version": "1.0.0",
+  "description": "Thu thập số điện thoại mà người dùng tự đăng công khai trên trang đang xem (bình luận, bài viết) và xuất CSV.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_title": "Thu thập SĐT",
+    "default_popup": "popup.html"
+  }
+}

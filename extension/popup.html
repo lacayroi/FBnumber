@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Thu thập SĐT công khai</h1>
+  <div class="actions">
+    <button id="scan">Quét trang</button>
+    <button id="expand" title="Bấm các nút 'Xem thêm bình luận' rồi quét lại">Mở rộng bình luận</button>
+  </div>
+  <div class="actions">
+    <button id="copy">Sao chép SĐT</button>
+    <button id="csv">Xuất CSV</button>
+    <button id="clear" class="danger">Xóa</button>
+  </div>
+  <p id="status"></p>
+  <table>
+    <thead><tr><th>SĐT</th><th>Người đăng</th><th>Nội dung</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <p class="note">Chỉ thu thập số do chính người dùng đăng công khai trên trang đang mở. Hãy dùng dữ liệu đúng mục đích và tuân thủ Nghị định 13/2023/NĐ-CP.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

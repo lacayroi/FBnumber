@@ -1,0 +1,12 @@
+body { width: 520px; margin: 0; padding: 12px; font: 13px system-ui, sans-serif; color: #1c1e21; background: #fff; }
+h1 { font-size: 16px; margin: 0 0 10px; }
+.actions { display: flex; gap: 6px; margin-bottom: 6px; }
+button { flex: 1; padding: 6px 8px; border: 0; border-radius: 6px; background: #1877f2; color: #fff; cursor: pointer; }
+button:hover { background: #166fe5; }
+button.danger { background: #e4e6eb; color: #1c1e21; }
+#status { min-height: 1em; color: #65676b; margin: 6px 0; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 4px; border-bottom: 1px solid #e4e6eb; vertical-align: top; }
+td:first-child { font-family: ui-monospace, monospace; white-space: nowrap; }
+td:last-child { color: #65676b; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.note { font-size: 11px; color: #65676b; margin-top: 10px; }
